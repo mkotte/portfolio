@@ -10,21 +10,21 @@
 
 <body>
     <header class="header">
-        <h1>Michael Kotte</h1>
+        <h1>C. Michael Kotte</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
+                    <a href="#home">Home</a>
+                </li>                
+                <li> 
                     <!--Need to figure out how to link a resume when not sectioned on this page-->
                     <a href="#resume">Resume</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a> 
                 </li>
             </ul>
         </nav>
@@ -34,63 +34,62 @@
 
 <!--Background image/banner here and in css-->
 
-      <main> 
-        <!--About Me-->
+      <main>
+       
         
+    <!--About Me-->
+    <section class="about-me">
+        <div class="about-me-overview">
+            <img src="./assets/profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
+            <h2>C. Michael Kotte</h2>
+            <h3>Bootcamp Graduate & CS Student</h3>
+        </div>
+        <div class="about-me-bio">
+            <h1>Biography</h1>
+            <p>I am a recent graduate from The Ohio State's: College of Engineering's fullstack web developement 6-month bootcamp.  While also currently working towards my bachelors of science in computer science through Western Governors University.</p><br/>
+            <p>Currently I am seeking a position as a Junior Web Developer.  I aim to start my career while continuing my education.  Aside from work I am typically seen walking my two year-old husky Ronin and often times playing in multiple recreational basketball leagues.</p></br>
+           <p>Take some time to scroll through my portfolio page and feel free to reach out!</p><br/>
+       <div class="about-me-lists">
+            <div class="interests">
+                <h3>Interests</h3>
+                <ul>    
+                    <li>Software Engineering</li>
+                    <li>Web Developement</li>
+                    <li>Cloud Computing</li>
+                </ul>
+            </div>  
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <p class="program">Fullstack Web Developement Bootcamp</p>
+                        <p class="school">The Ohio State University: College of Engineering</p>
+                    </li>
+                    <li>
+                        <p class="program">B.S. Computer Science, 2019-Present</p>
+                        <p class="school">Western Governors University</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section> 
 
-            <section class="card">
-                <h2>About Me</h2>
-            </section>
-        <article> 
-            <section>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id sollicitudin purus, nec venenatis felis. Ut vestibulum urna eget dui aliquam, et malesuada neque commodo. Maecenas venenatis mauris dapibus semper fermentum. Nunc in laoreet felis. Curabitur pellentesque posuere dui, eget condimentum erat imperdiet et. Etiam ultricies placerat tellus at commodo. Morbi posuere tortor leo, sed condimentum ipsum semper sed. Mauris luctus malesuada lacus ac tristique. Nullam commodo nunc ut purus consequat tempor. Fusce euismod nulla lacus, a vestibulum mi dignissim et. Donec aliquam magna enim, sed sollicitudin neque cursus eget. Integer tempus suscipit lectus, sed tempus libero venenatis non. Proin eu sem tincidunt, egestas velit nec, vestibulum arcu.<br/>Duis rhoncus ornare turpis a imperdiet. Integer laoreet nunc eu maximus vehicula. Praesent gravida ac augue ut viverra. Etiam volutpat consectetur commodo. Donec lorem diam, vehicula ut consectetur non, varius id sem. Curabitur in justo nec purus condimentum cursus sed nec velit. Maecenas sollicitudin volutpat justo, in dictum sapien efficitur quis. Donec aliquet interdum vulputate. Vivamus porta, dui ac pellentesque hendrerit, urna neque commodo tortor, eu tincidunt enim est nec ligula. Fusce non fermentum odio. Proin blandit tellus sed justo pellentesque varius. Etiam erat purus, imperdiet sit amet dui vitae, faucibus pulvinar justo. Nulla vel neque non ex pharetra tincidunt sit amet sed orci. Aliquam porttitor, ipsum ut accumsan faucibus, magna dui eleifend elit, a dapibus nunc justo et erat. Sed at nulla porttitor, vulputate sem nec, vehicula nisl.</p>
-            </section>
-        </article>
-
-        <!--Work-->
-        <!-- <article>
-            <section class="float-left" id="work">   
-                <h2>Work</h2>
-            </section> -->
-        <!-- project boxes -->
-            <!-- <section class="rectangle">
-                <img src="">
-                <h3>Project 1</h3>
-                <p>Fullstack</p>
-            </section>
-            <section class="square">
-                <img src="">
-                <h3>Project 2</h3>
-                <p>Bootstrap</p>
-            </section>
-            <section class="square">
-                <img src="">
-                <h3>Project 3</h3>
-                <p>HTML/CSS</p>
-            </section>
-            <section class="square">
-                <img src="">
-                <h3>Project 4</h3>
-                <p></p>
-            </section>
-            </section><section class="square">
-                <img src="">
-                <h3>Project 5</h3>
-                <p></p>
-            </section>
-        
-        </article>
     </main>
 
     <!--Contact Me-->
     <!-- <footer>
-        <h4 id="contact-me" class="float-left">Contact Me</h4> -->
+        <h4 id="contact-me" class="float-left">Contact Me</h4>--> 
         <!--add links-->
-        <!-- <a href="#">(614)302-5353</a>
-        <a href="#">michaelkotte1@gmail.com</a>
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-    </footer> -->
+        <!-- <section class="contact-me">
+        <ul>
+            <li><a href="#">(614)302-5353</a></li>
+            
+            <li><a href="#">michaelkotte1@gmail.com</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </section>
+    </footer>  -->
 
 </body>
 </html>  

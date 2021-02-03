@@ -6,68 +6,261 @@
   --darker-light:#0C0032;
 }
 
+*{
+box-sizing: border-box;
+}
+
 header{
-    padding:12px 20px 12px 0px;
+    padding:12px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--light);
     color: var(--dark);
-    
 }
 
 header h1{
     font-size:40px;
     display:inline-block;
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 8px 8px 8px 50px;
-    width:320px;
+    color: var(--dark);
+    text-align: center;
+    margin-left: 275px;
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 80px;
+    padding-top: 8px;
+    margin-right: 275px;
     float: right;
     font-size: 20px;
     list-style-type: none;
+
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 40px;
+    font-size: 24px;
 }
 
 header nav ul li a{
     color:var(--dark);
+    text-decoration: none;
 }
 
-article{
-    margin-top: 50px;
- 
+.about-me{
+    margin:100px 275px;
+    max-width:1200px;
+    text-align: center;
+    display:flex;
+    align-items: stretch;
 }
+
+.about-me-overview{
+    float:left;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.about-me-overview h2{
+font-size: 36px;
+display: block;
+padding: 12px 0px;
+}
+
+.profile-photo{
+    border-radius: 50%;
+    height:275px;
+    width:275px;
+}
+
+.about-me-bio{
+    position: relative;
+    padding: 0 0 0 50px;
+    /* margin-left: 325px; */
+    text-align: left;
+}
+
+.about-me-bio h1{
+    font-size: 36px;
+    padding-bottom:10px;
+}
+
+/* .interests p{
+    font-size: 20px;
+    line-height: 1.5;
+} */
+
+.about-me-lists{
+    display:flex;
+    
+}
+
+.interests{
+    padding-right: 15px;
+    font-size:20px;
+    display:block;
+    line-height: 1.5;
+    
+}
+
+.interests h3{
+    font-size:24px;
+}
+
+.interests ul{
+     padding-left: 20px;
+}
+.interests ul li{
+    list-style-type: circle;
+}
+
+.education{ 
+    padding: 0 30px;
+    display:block;
+    float:right;
+}
+
+.education h3{
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+
+.program{
+    font-size:20px;
+    padding-top:5px;
+}
+.school{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+/* article{
+    margin-top: 25px;
+    display:flex;
+    align-items: stretch;
+
+}
+
 section h2{
     font-size:36px;
     float:left;
-    margin-right: 20px;
-    padding: 80px 40px;
-    background-color:var(--primary);
+    margin-right: 0;
+    padding:10px;
     color:var(--secondary);
     width:320px;
     text-align:right;
     top:10px;
-    display:table;
-    height: auto;
+    align-items: stretch;
 }
 
-article p{
+.about-me{
     text-align: left;
-    margin:5px;
-    padding:0px 40px;
+    margin:0px 5px 5px 0px;
+    padding-right:80px;
+    padding-left: 40px;
     letter-spacing: 1px;
     line-height: 1.8;
-    display:table; 
+    display:flex; 
+    width:auto;
     border-left: black 3px;
-    border-style: groove;
+    border-left-style: solid;
+} */
+
+/* 
+article h3{
+    text-align: left;
+    margin:0px 5px 5px 0px;
+    padding-right:80px;
+    padding-left: 40px;
+    letter-spacing: 1px;
+    display:flex; 
+    width:auto;
+    align-items: stretch;
 }
+*/
+
+/* .project{
+    border-left: black 3px;
+    border-left-style: solid;
+    width:400px;
+    padding-left: 20px;
+}
+
+
+.project p{
+    padding-left: 60px;
+}
+
+
+.square{
+    width:60%;
+    clear:right;
+}
+
+
+footer{
+    padding: 20px 0;
+}
+
+
+footer h4{
+    font-size:36px;
+    float:left;
+    margin-right: 0;
+    padding:10px;
+    color:var(--secondary);
+    width:320px;
+    text-align:right;
+    top:10px;
+    align-items: stretch;
+}
+
+
+.contact-me{
+   float: right;    
+   padding-top: 15px;
+   margin-right: 80px;
+   font-size: 20px;
+   list-style-type: none;
+   display: inline-block;
+   margin-left: 40px;
+}
+
+body footer ul li {
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+
+.main{
+    display:block;
+    width:600px;
+    height:400px;
+    background-color:red;
+    margin:40px 40px 40px 0;
+
+}
+
+
+.content{
+    width:90%;
+    margin-left:80px;
+    display:inline-block;
+
+
+} */
+
+
+
+
 
 /*
 
