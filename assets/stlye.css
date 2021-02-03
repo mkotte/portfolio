@@ -54,7 +54,7 @@ header nav ul li a{
 }
 main{
     margin:100px 275px;
-}
+} 
 
 .about-me{
     /* max-width:1200px; */
@@ -164,26 +164,30 @@ main{
     padding-left:32px;
 }
 
+
+
+
 .skills{
     margin: 200px 0;
     padding-bottom: 100px;
-    
 }
 
 .skills-header{
     font-size:40px;
     text-align: center;
-    width:1200px;
+    width:1330px;
     padding-bottom:100px;
 }
 
 .skills-ids{
     display:flex;
     text-align: center;
+    width: 1330px;
+    padding: 0 65px;
 }
 
 .skills-ids div{
-    padding:0 10px;
+    
     text-align:center;
     flex:none;
     width:400px;
