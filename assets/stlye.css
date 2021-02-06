@@ -61,6 +61,15 @@ main{
     text-align: center;
     display:flex;
     align-items: stretch;
+    padding:80px 0;
+}
+
+.profile-photo{
+    border-radius: 50%;
+    height:275px;
+    width:275px;    
+    text-align: center;
+    margin:0 62.5px;
 }
 
 .about-me-overview{
@@ -83,13 +92,14 @@ main{
     font-size: 20px;
 }
 
+.contact-me ul{
+    display:flex;
+    padding:25px 15px;
+    width:400px;
+}
 
-.profile-photo{
-    border-radius: 50%;
-    height:275px;
-    width:275px;    
-    text-align: center;
-    margin:0 62.5px;
+.contact-me ul li{
+    padding:0 25px;
 }
 
 .about-me-bio{
@@ -206,149 +216,60 @@ main{
 
 }
 
+.work{
+    margin: 100px 0;
+}
 
+.work-heading{
+    font-size:40px;
+    text-align: center;
+    width:1330px;
+    padding-bottom:30px;    
+}
 
-
-
-
-
-
-
-
-/* article{
-    margin-top: 25px;
+.work-container{
+    height:600px;
+    margin:100px 0;
     display:flex;
-    align-items: stretch;
-
 }
 
-section h2{
-    font-size:36px;
-    float:left;
-    margin-right: 0;
-    padding:10px;
-    color:var(--secondary);
-    width:320px;
-    text-align:right;
-    top:10px;
-    align-items: stretch;
-}
-
-.about-me{
-    text-align: left;
-    margin:0px 5px 5px 0px;
-    padding-right:80px;
-    padding-left: 40px;
-    letter-spacing: 1px;
-    line-height: 1.8;
-    display:flex; 
-    width:auto;
-    border-left: black 3px;
-    border-left-style: solid;
-} */
-
-/* 
-article h3{
-    text-align: left;
-    margin:0px 5px 5px 0px;
-    padding-right:80px;
-    padding-left: 40px;
-    letter-spacing: 1px;
-    display:flex; 
-    width:auto;
-    align-items: stretch;
-}
-*/
-
-/* .project{
-    border-left: black 3px;
-    border-left-style: solid;
-    width:400px;
-    padding-left: 20px;
-}
-
-
-.project p{
-    padding-left: 60px;
-}
-
-
-.square{
-    width:60%;
-    clear:right;
-}
-
-
-footer{
-    padding: 20px 0;
-}
-
-
-footer h4{
-    font-size:36px;
-    float:left;
-    margin-right: 0;
-    padding:10px;
-    color:var(--secondary);
-    width:320px;
-    text-align:right;
-    top:10px;
-    align-items: stretch;
-}
-
-
-.contact-me{
-   float: right;    
-   padding-top: 15px;
-   margin-right: 80px;
-   font-size: 20px;
-   list-style-type: none;
-   display: inline-block;
-   margin-left: 40px;
-}
-
-body footer ul li {
-    display: inline-block;
-    margin-left: 40px;
-
-}
-
-
-.main{
-    display:block;
+.project-1{
     width:600px;
     height:400px;
     background-color:red;
-    margin:40px 40px 40px 0;
-
+    padding-right:10px;
+    position:relative;
+    margin:0;
+    clear:none;
+    margin-right: 40px;
+    margin-left:65px;
 }
 
+.side-projects{
+    float:right;
+    flex-direction: column;
+    height:400px;
+    padding-right: 65px;
+}
 
-.content{
-    width:90%;
-    margin-left:80px;
-    display:inline-block;
+.project-2{
+    height:190px;
+    width:600px;
+    background-color: red;
+    margin-bottom: 20px;
+}   
 
+.project-3{
+    height:190px;
+    width:600px;
+    background-color: red;
+}
 
+/* .footer{
+    text-align:center;
+    width:100%;
 } */
 
 
 
 
-
-/*
-
-.col-container {
-    display: flex;
-    width:100%;
-}
-
-
-If the browser window is smaller than 600px, make the columns stack on top of each other 
-@media only screen and (max-width: 600px) {
-    .col {
-      display: block;
-      width: 100%;
-    }
-  }
- */

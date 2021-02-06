@@ -15,7 +15,7 @@
        <nav>
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#" target="location.reload()">Home</a>
                 </li>                
                 <li> 
                     <!--Need to figure out how to link a resume and apply a google icon for download.-->
@@ -32,7 +32,6 @@
     </header>
 
 
-
 <!--Background image/banner here and in css-->
 
 <main>
@@ -44,15 +43,31 @@
             <img src="./assets/profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
             <h2>C. Michael Kotte</h2>
             <h3>Bootcamp Graduate & CS Student</h3>
-            <div>
-                <!--insert contact-me links here-->
-            </div>
+            <div class="contact"> 
+                <section class="contact-me">
+                        <ul>
+                            <li><a href="https://github.com/mkotte">
+                                <span stlye="color: blue"> <i class="fab fa-github-square fa-3x"></i><span></a>
+                            </li>
+                            <li><a href="mailto:michaelkotte1@gmail.com">
+                                <span stlye="color: blue"><i class="fas fa-envelope fa-3x"></i></span></a>       
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/c-michael-kotte-85a662186/">
+                                <span stlye="color:blue"><i class="fab fa-linkedin fa-3x"></i></span></a>
+                            </li>
+                            <!--add link-->
+                            <li><a href="#">
+                                <span style="color:blue"><i class="fas fa-file-download fa-3x"></i></span></a>
+                            </li>
+                        </ul>
+                </section>
+            </div>              
         </div>
-        <div class="about-me-bio">
+    <div class="about-me-bio">
             <h1>Biography</h1>
             <p>I am a recent graduate from The Ohio State University's College of Engineering's fullstack web developement program.  This was a 6-month intensive bootcamp focused on both front-end and back-end developement using languages such as JavaScript, HTML/CSS and SQL.  In addition to the web developement program, I am also in my third year studying computer science through Western Governors University. My focus at Western Governors has so far been on fundamentals such as Network & Security, Database Management Systems and Scripting & Programming (C++).</p><br/>
             <p>Currently I am seeking a position as a Junior Web Developer, Software Engineer or any entry level engineering role.  I am currently based out of Columbus, Ohio but I am open to relocation and/or virtual/remote positions.  I aim to start my career while continuing my education.  Aside from work I am typically seen walking my two year-old husky Ronin, wakesurfing, playing in multiple basketball leagues and spending time with friends and family.</p></br>
-            <p>Take some time to scroll through my portfolio and feel free to reach out!  You can also download my resume here!</p><br/>
+            <p>Take some time to scroll through my portfolio and feel free to reach out!</p><br/>
        <div class="about-me-lists">
             <div class="interests">
                 <h3>Interests</h3>
@@ -77,11 +92,11 @@
                     </li>
                 </ul>
             </div>
-            </div>
         </div>
+    </div>
     </section> 
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills-header">
             <h3>Skills</h3>
         </div>
@@ -94,7 +109,7 @@
                 <p>Bootstrap, Foundation</p>
             </div>
             <div>
-                <span style="color:blue">
+                <span style="color:rgb(0, 0, 255)">
                 <i class="fas fa-database fa-8x"></i>
                 </span>
                 <h4>Databases</h4>
@@ -110,47 +125,33 @@
         </div>
     </section>
     
-    <section class="work">
-        <div class="work-container">
+    <section class="work" >
             <div class="work-heading">
-                <h3>Work</h3>
+                <h3 id="work">Work</h3>
             </div>
-            <div class="project 1">
+        <div class="work-container">
+            <div class="project-1">
                 <h4>Project 1</h4>
                 <p>Description</p>
             </div>
-            <div class="project 2">
+        <div class="side-projects">
+            <div class="project-2">
                 <h4>Project 2</h4>
                 <p>Description</p>
             </div>
-            <div class="project 3">
+            <div class="project-3">
                 <h4>Project 3</h4>
                 <p>Description</p>
             </div>
+        </div>    
         </div>
     </section>
     
 </main>
 
-    
-
-
-
-
-
-
-    <!--Contact Me-->
     <!-- <footer>
-        <h4 id="contact-me" class="float-left">Contact Me</h4>--> 
-        <!--add links-->
-        <!-- <section class="contact-me">
-        <ul>
-            <li><a href="#">(614)302-5353</a></li>
-            <li><a href="#">michaelkotte1@gmail.com</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </section>
-    </footer>  -->
+        <h2>Made with lots of hard work and ☕!</h2>
+    </footer> -->
 
 </body>
 </html>  
