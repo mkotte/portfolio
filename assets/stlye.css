@@ -10,6 +10,7 @@
 box-sizing: border-box;
 }
 
+/* header */
 header{
     padding:12px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,6 +34,7 @@ header h1{
     width:400px;
 }
 
+/* nav */
 header nav {
     padding-top: 8px;
     margin-right: 10%;
@@ -52,16 +54,26 @@ header nav ul li a{
     text-decoration: none;
 }
 
+/* main */
 main{
     margin:100px 8%;
 } 
 
+/* about me parent */
 .about-me{
-    /* max-width:1200px; */
     text-align: center;
     display:flex;
     align-items: stretch;
     padding:80px 0;
+}
+
+/* about me overview section */
+
+.about-me-overview{
+    float:left;
+    text-align: center;
+    padding: 0 15px;
+    width:auto;
 }
 
 .profile-photo{
@@ -70,13 +82,6 @@ main{
     width:275px;    
     text-align: center;
     margin:0 62.5px;
-}
-
-.about-me-overview{
-    float:left;
-    text-align: center;
-    padding: 0 15px;
-    width:auto;
 }
 
 .about-me-overview h2{
@@ -102,10 +107,9 @@ main{
     padding:0 25px;
 }
 
+/* biography section */
 .about-me-bio{
-    /* position: relative; */
     padding: 0 0 0 50px;
-    /* margin-left: 325px; */
     text-align: left;
     font-size: 24px;
     line-height: 1.4;
@@ -118,12 +122,13 @@ main{
 }
 
 
+/* lists parent */
 .about-me-lists{
     display:flex;
     justify-content: center;
     
 }
-
+/* interests section */
 .interests{
     padding-right: 15px;
     font-size:24px;
@@ -146,10 +151,10 @@ main{
     float:left;
 }
 
+/* education section */
 .education{ 
     padding: 0 30px 0 0;
     display:block;
-    /* float:right; */
     float:right;
     margin-bottom: 100px;
 }
@@ -177,7 +182,7 @@ main{
     padding-left:32px;
 }
 
-
+/* skills section */
 .skills{
     padding: 100px 0;
 }
@@ -215,6 +220,7 @@ main{
 
 }
 
+/* work section */
 .work{
     margin: 100px 0;
     width:100%;
@@ -309,13 +315,6 @@ main{
     opacity: 80%;
 }
 
-footer{
-    padding:10px;
-    text-align:center;
-    width:auto;
-    justify-content: center;
-}
-
 .project-1 img:hover{
     opacity: 100%;
 }
@@ -328,10 +327,14 @@ footer{
     opacity: 100%;
 }
 
+footer{
+    padding:10px;
+    text-align:center;
+    width:auto;
+    justify-content: center;
+}
 
-
-
-
+/* media queries for resposiveness*/
 
 @media screen and (max-width: 1400px) {
     
@@ -356,9 +359,7 @@ footer{
         align-items: center;
         padding-top:100px;
     }
-
-    
-  }
+}
 
 @media screen and (max-width: 1250px) {
     .work-heading{
