@@ -12,14 +12,15 @@
 <body>
     <header class="header">
          <h1>C. Michael Kotte</h1>
-       <nav>
+        <nav>
+        <div class="navbar">
             <ul>
                 <li>
                     <a href="#" target="location.reload()">Home</a>
                 </li>                
                 <li> 
                     <!--Need to figure out how to link a resume and apply a google icon for download.-->
-                    <a href="#resume">Resume <i class="fas fas fa-file-download fa-sm"></i></a>
+                    <a href="/assets/images/resume-image.jpg" download="resume photo">Resume <i class="fas fas fa-file-download fa-sm"></i></a>
                 </li>
                 <li>
                     <a href="#skills">Skills</a>
@@ -28,6 +29,7 @@
                     <a href="#work">Work</a> 
                 </li>
             </ul>
+        </div>
         </nav>
     </header>
 
@@ -40,9 +42,10 @@
     <!--About Me-->
     <section class="about-me">
         <div class="about-me-overview">
-            <img src="./assets/profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
+            <img src="./assets/images/profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
             <h2>C. Michael Kotte</h2>
             <h3>Bootcamp Graduate & CS Student</h3>
+            
             <div class="contact"> 
                 <section class="contact-me">
                         <ul>
@@ -56,7 +59,7 @@
                                 <span stlye="color:blue"><i class="fab fa-linkedin fa-3x"></i></span></a>
                             </li>
                             <!--add link-->
-                            <li><a href="#">
+                            <li><a href="/assets/images/resume-image.jpg" download="resume photo">
                                 <span style="color:blue"><i class="fas fa-file-download fa-3x"></i></span></a>
                             </li>
                         </ul>
@@ -67,14 +70,21 @@
             <h1>Biography</h1>
             <p>I am a recent graduate from The Ohio State University's College of Engineering's fullstack web developement program.  This was a 6-month intensive bootcamp focused on both front-end and back-end developement using languages such as JavaScript, HTML/CSS and SQL.  In addition to the web developement program, I am also in my third year studying computer science through Western Governors University. My focus at Western Governors has so far been on fundamentals such as Network & Security, Database Management Systems and Scripting & Programming (C++).</p><br/>
             <p>Currently I am seeking a position as a Junior Web Developer, Software Engineer or any entry level engineering role.  I am currently based out of Columbus, Ohio but I am open to relocation and/or virtual/remote positions.  I aim to start my career while continuing my education.  Aside from work I am typically seen walking my two year-old husky Ronin, wakesurfing, playing in multiple basketball leagues and spending time with friends and family.</p></br>
-            <p>Take some time to scroll through my portfolio and feel free to reach out!</p><br/>
-       <div class="about-me-lists">
+            <p>Take some time to scroll through my portfolio and feel free to reach out!</p><br/>  
+    </div>
+    </section> 
+
+    <section>
+        <div class="about-me-lists">
             <div class="interests">
                 <h3>Interests</h3>
                 <ul>    
                     <li>Software Engineering</li>
                     <li>Web Developement</li>
                     <li>Cloud Computing</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Internet of Things (IoT)</li>
+                    <li>CyberSecurity</li>
                 </ul>
             </div>  
             <div class="education">
@@ -93,8 +103,7 @@
                 </ul>
             </div>
         </div>
-    </div>
-    </section> 
+    </section>
 
     <section class="skills" id="skills">
         <div class="skills-header">
@@ -131,17 +140,26 @@
             </div>
         <div class="work-container">
             <div class="project-1">
-                <h4>Project 1</h4>
-                <p>Description</p>
+                <img src="assets/images/maxim-hopman-IayKLkmz6g0-unsplash.jpg">
+                <div class="project-text">
+                <h4>Surf Report</h4>
+                <p>MERN Stack</p>
+                </div>
             </div>
         <div class="side-projects">
             <div class="project-2">
-                <h4>Project 2</h4>
-                <p>Description</p>
+                <img src="assets/images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg">
+                <div class="project-text">
+                <h4>Calculator</h4>
+                <p>React/jQuery</p>
+                </div>
             </div>
             <div class="project-3">
-                <h4>Project 3</h4>
-                <p>Description</p>
+                <img src="assets/images/daniel-josef-AMssSjUaTY4-unsplash.jpg">
+                <div class="project-text">
+                <h4>Pastel Puzzles</h4>
+                <p>MERN Stack</p>
+                </div>
             </div>
         </div>    
         </div>
@@ -149,9 +167,9 @@
     
 </main>
 
-    <!-- <footer>
+    <footer>
         <h2>Made with lots of hard work and ☕!</h2>
-    </footer> -->
+    </footer>
 
 </body>
 </html>  
