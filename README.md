@@ -53,11 +53,11 @@ While creating this portfolio page I:
 
 ## Screenshot of Completed Assignment
 
-![screenshot of the homework assignment's, finished website](./assets/images/homework02-screenshot.png)
+![screenshot of the homework assignment's, finished website](./assets/images/portfolio.png)
 
 
 ## Links
 
-Deployed Application(GitHub Pages): https://mkotte.github.io/homework02/
+Deployed Application(GitHub Pages): https://mkotte.github.io/portfolio/
 
-GitHub Repository: https://github.com/mkotte/homework02
+GitHub Repository: https://github.com/mkotte/portfolio
