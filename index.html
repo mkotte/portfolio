@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/stlye.css">
-    
+    <link rel="stylesheet" href="./scripts/css/reset.css">
+    <link rel="stylesheet" href="./scripts/css/style.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
+    
     <header class="header">
-         <h1>C. Michael Kotte</h1>
+            <h1>C. Michael Kotte</h1>
         <nav>
         <div class="navbar">
             <ul>
@@ -38,11 +39,11 @@
 <main>       
         
     <!--About Me-->
-    <section class="about-me">
+    <section class="about-me ">
         <div class="about-me-overview">
             <img src="./assets/images/profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
             <h2>C. Michael Kotte</h2>
-            <h3>Bootcamp Graduate & CS Student</h3>
+            <h3>Aspiring Junior Developer</h3>
             
             <div class="contact"> 
                 <section class="contact-me">
@@ -62,12 +63,13 @@
                             </li>
                         </ul>
                 </section>
-            </div>              
+            </div>
+
         </div>
         <div class="about-me-bio">
             <h1>Biography</h1>
             <p>I am a recent graduate from The Ohio State University's College of Engineering's fullstack web developement program.  This was a 6-month intensive bootcamp focused on both front-end and back-end developement using languages such as JavaScript, HTML/CSS and SQL.  In addition to the web developement program.</p><br/>
-            <p>Currently I am seeking a position as a Junior Web Developer, Software Engineer or any entry level engineering role.  I am currently based out of Columbus, Ohio but I am open virtual/remote positions.  I aim to start my career while continuing my education and personal developement as a developer.  Aside from work I am typically seen walking my two year-old husky Ronin, wakesurfing, playing in multiple basketball leagues and spending time with friends and family.</p></br>
+            <p>Currently I am seeking a position as a Junior Web Developer, Software Engineer or any entry level engineering role.  I am currently based out of Columbus, Ohio but I am open virtual/remote positions.  I aim to start my career while continuing my education and personal developement as a developer.</p></br>
             <p>Aside from work I am typically seen walking my two year-old husky Ronin, wakesurfing, playing in multiple basketball leagues and spending time with friends and family.</p><br/>
             <p>Take some time to scroll through my portfolio and feel free to reach out!</p><br/>  
         </div>
@@ -99,63 +101,17 @@
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="skills goodDiv skew1" id="skills-section">
         <div class="skills-header">
             <h3>Skills</h3>
         </div>
-        <div class="skills-ids">
-            <div>
-                <span style="color:blue">
-                <i class="fab fa-html5 fa-8x"></i>
-                </span>
-                <h4>HTML5/CSS</h4>
-                <p>Bootstrap, Materialize</p>
-            </div>
-            <div>
-                <span style="color:rgb(0, 0, 255)">
-                <i class="fas fa-database fa-8x"></i>
-                </span>
-                <h4>Databases</h4>
-                <p>MongoDB, MySQL</p>
-            </div>
-            <div>
-                <span style="color:blue">
-                <i class="fab fa-js-square fa-8x"></i>
-                </span>
-                <h4>JavaScript</h4>
-                <p>Express.js, jQuery, Node.js, React</p>
-            </div>
+        <div class="skills-wrapper">
+            
         </div>
     </section>
     
-    <section class="work" >
-        <div class="work-heading">
-            <h3 id="work">Work</h3>
-        </div>
-        <div class="work-container">
-            <div class="project-1">
-                <a href="https://github.com/mkotte/project01"><img src="assets/images/covid-woke-results-copy.png"></a>                <div class="project-text">
-                <h4>COVIDwoke</h4>
-                <p>JavaScript / jQuery</p>
-            </div>
-        </div>
-        <div class="side-projects">
-            <div class="project-2">
-                <a href="https://github.com/mkotte/homework06"><img src="assets/images/Homework06-screenshot-copy.png"></a>
-                <div class="project-text">
-                    <h4>Weather Dashboard</h4>
-                    <p>Javascript / API's</p>
-                </div>
-            </div>
-            <div class="project-3">
-                <a href="https://github.com/mkotte/homework05"><img src="assets/images/homework05-screenshot.png"></a>
-                <div class="project-text">
-                    <h4>Scheduler</h4>
-                    <p>jQuery</p>
-                </div>
-            </div>
-        </div>    
-        </div>
+    <section class="work goodDiv skew2" >
+        
     </section>
     
 </main>
@@ -163,7 +119,7 @@
     <footer>
         <h2>Made with lots of hard work and ☕!</h2>
     </footer>
-
-    <script src="https://kit.fontawesome.com/9e2c47a7ae.js" crossorigin="anonymous"></script>
+    
+    <script src="./scripts/js/skills.js"></script>
 </body>
 </html>  
