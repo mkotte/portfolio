@@ -64,6 +64,7 @@ header nav ul li a{
 /* main */
 main{
     /* margin:100px 8%; */
+    
 } 
 
 /* about me parent */
@@ -142,6 +143,7 @@ main{
 
 .about-me-bio p{
     color:var(--secondary-text);
+    font-size: 24px;
 }
 
 /* lists parent */
@@ -259,7 +261,6 @@ main{
 }
 
 .singleSkill{
-    
     width: 300px;
     height: 110px;
 }
@@ -281,7 +282,8 @@ main{
 
 .skillsName{
     color:var(--background);
-    margin-top:10px;
+    margin:10px 0;
+    font-size: 24px;
 }
 
 /* work section */
@@ -419,7 +421,6 @@ footer{
         justify-content: center;
         text-align: center;
         width:auto;
-        margin: auto;
     }
     .about-me-overview h2{
         width: auto;
@@ -436,11 +437,51 @@ footer{
         justify-items: center;
         width:auto;
     }
+    main{
+        padding-top:10px;
+    }
 }
 
+@media screen and (max-width: 1100px){
+    .singleSkill{
+        width: 200px;
+        height: 110px;
+    }
+    
+    .iconWrapper{
+        background-color: var(--darker-light);
+        width: 50px; 
+        height: 50px;
+        border-radius: 50%;
+        padding-top: 13px;
+        margin-bottom: 10px;
+        margin: 0 75px;
+    }
+    
+    .iconWrapper > i {
+        position: relative;
+        font-size:24px;
+    }
+    
+    .skillsName{
+        color:var(--background);
+        margin:10px 0;
+        font-size: 24px;
+    }
+}
+
+
 @media screen and (max-width: 1000px){
+    .about-me-bio{
+        padding:0;
+        
+    }
     .education{
-        width:96%;
+        margin:0 8%;
+    }
+    .interests{
+        margin: 0 8%;
+        font-size: 24px;
     }
 
 }
