@@ -72,7 +72,7 @@ main{
     text-align: center;
     display:flex;
     align-items: stretch;
-    padding:80px 0;
+    padding:80px 0 0 0;
     margin:100px 8%;
     position: relative;
 }
@@ -178,10 +178,11 @@ main{
 
 /* education section */
 .education{ 
-    padding: 0 30px 0 0;
+    padding: 0 0 0 0;
     display:block;
     float:right;
     margin-bottom: 100px;
+    width: 585px;
 }
 
 .education h3{
@@ -343,24 +344,26 @@ footer{
     .about-me-lists{
         flex-direction: column;
         justify-content: center;
-        width:100%;
+        
     }
 
     .interests{
         float:left;
-        width:96%;
+        padding-left: 8%;
+        padding-right: 8%;
         align-items: center;
-        margin:auto;
+        
         max-width:none;
     }
     
     .education{ 
         float: left;
-        width:96%;
-        margin:auto;
+        padding-left: 8%;
+        
         align-items: center;
-        padding-top:100px;
+        padding-top:25px;
     }
+
 }
 
 @media screen and (max-width: 1250px) {
@@ -420,7 +423,10 @@ footer{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width:auto;
+        
+    }
+    .about-me-bio{
+        padding-left: 0;
     }
     .about-me-overview h2{
         width: auto;
@@ -440,6 +446,16 @@ footer{
     main{
         padding-top:10px;
     }
+    .education{
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-right:0;
+    } 
+    .interests{
+        padding-left: 8%;
+        padding-right: 8%;
+        font-size: 24px;
+    } 
 }
 
 @media screen and (max-width: 1100px){
@@ -472,17 +488,11 @@ footer{
 
 
 @media screen and (max-width: 1000px){
-    .about-me-bio{
+     /* .about-me-bio{
         padding:0;
         
-    }
-    .education{
-        margin:0 8%;
-    }
-    .interests{
-        margin: 0 8%;
-        font-size: 24px;
-    }
+    } */
+     
 
 }
 
