@@ -87,14 +87,6 @@ const projectNames = (j) => {
 }
 
 
-
-const modalListeners = (j) => {
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })
-}
-
-
 // iterating through project functions
 for (i=0; i < projectInfo.length; i++){
     projectBoxes(i)
@@ -109,10 +101,10 @@ const addTechUsed = (index) => {
         const list = document.querySelector(".techList")
         const tech = document.createElement('li')
         tech.textContent = techArray[i]
-        console.log(list)
         list.appendChild(tech)
     }
 }  
+
 // function for removing all child nodes
 const removeAllChildNodes = (parent) => {
     while (parent.firstChild){
@@ -120,30 +112,23 @@ const removeAllChildNodes = (parent) => {
     }
 }
 
-// removing appended tech on "closing" of modal
-const modalCloseBtn = document.querySelector('#closeModal')
-modalCloseBtn.addEventListener("click", function(event){
-    event.preventDefault();
-    const list = document.querySelector(".techList")
-    removeAllChildNodes(list);
-})
-
 
 
 
 // generic event listener on projectBox's modals
 // using bootstraps method of varying modal content
-
 $('#projectModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Button that triggered the modal
     var info = button.data('index') // Extract info from data-* attributes
     var modal = $(this)
-
     modal.find('.modal-title').text(projectInfo[info].name)
     modal.find('.modal-description').text(projectInfo[info].description)
     addTechUsed(info);
-    
+});
 
-    
-  })
-
+// removing appended tech on "closing" of modal
+$('#projectModal').on('hidden.bs.modal', function () {
+    // const modalCloseBtn = document.querySelector('#closeModal')
+    const list = document.querySelector(".techList");
+    removeAllChildNodes(list);
+});

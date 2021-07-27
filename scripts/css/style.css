@@ -334,6 +334,15 @@ main{
     font-size: 24px;
 }
 
+/* modal styling */
+
+
+
+#closeModal{
+    border:none;
+    background-color: none;
+    background:none;
+}
 
 footer{
     padding:10px;
