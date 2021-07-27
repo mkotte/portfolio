@@ -53,7 +53,7 @@ const projectInfo = [
 // adding project boxes
 const projectBoxes = (j) => {
     let work = document.querySelector(".work-wrapper")
-    let projectBox = document.createElement("div")
+    let projectBox = document.createElement("button")
     projectBox.setAttribute("class", 'projectBox')
     projectBox.setAttribute("id", `projectBox-${j}`)
     work.appendChild(projectBox);
@@ -82,12 +82,21 @@ const projectNames = (j) => {
     projectNameWrapper.appendChild(projectName)
 }
 
+const modalCreation = (j) => {
+
+}
+
+const modalListeners = (j) => {
+    
+}
+
+
 // iterating through project functions
-// for (i=0; i < projectInfo.length; i++){
-//     projectBoxes(i)
-//     projectIcons(i)
-//     projectNames(i)
-// }
+for (i=0; i < projectInfo.length; i++){
+    projectBoxes(i)
+    projectIcons(i)
+    projectNames(i)
+}
 
 
 
