@@ -54,8 +54,12 @@ const projectInfo = [
 const projectBoxes = (j) => {
     let work = document.querySelector(".work-wrapper")
     let projectBox = document.createElement("button")
+    projectBox.setAttribute("type", 'button')
     projectBox.setAttribute("class", 'projectBox')
     projectBox.setAttribute("id", `projectBox-${j}`)
+    projectBox.setAttribute("data-toggle", 'modal')
+    projectBox.setAttribute("data-target", `#projectModal`)
+    projectBox.setAttribute("data-index", `${j}`)
     work.appendChild(projectBox);
 }
 
@@ -82,12 +86,12 @@ const projectNames = (j) => {
     projectNameWrapper.appendChild(projectName)
 }
 
-const modalCreation = (j) => {
 
-}
 
 const modalListeners = (j) => {
-    
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 }
 
 
@@ -98,14 +102,48 @@ for (i=0; i < projectInfo.length; i++){
     projectNames(i)
 }
 
+// appending technology used to modal
+const addTechUsed = (index) => {
+    const techArray = projectInfo[index].tech
+    for (i=0; i < techArray.length; i++){
+        const list = document.querySelector(".techList")
+        const tech = document.createElement('li')
+        tech.textContent = techArray[i]
+        console.log(list)
+        list.appendChild(tech)
+    }
+}  
+// function for removing all child nodes
+const removeAllChildNodes = (parent) => {
+    while (parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+}
+
+// removing appended tech on "closing" of modal
+const modalCloseBtn = document.querySelector('#closeModal')
+modalCloseBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    const list = document.querySelector(".techList")
+    removeAllChildNodes(list);
+})
 
 
 
-// adding modal that pops up and populating correct info 
-    // conditional statement if(projectInfo[i].app === "none")
+
+// generic event listener on projectBox's modals
+// using bootstraps method of varying modal content
+
+$('#projectModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var info = button.data('index') // Extract info from data-* attributes
+    var modal = $(this)
+
+    modal.find('.modal-title').text(projectInfo[info].name)
+    modal.find('.modal-description').text(projectInfo[info].description)
+    addTechUsed(info);
     
 
+    
+  })
 
-
-
-// generic event listener on projects sourcing by ID for reference of array of obj values
