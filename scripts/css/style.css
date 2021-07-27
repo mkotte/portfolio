@@ -335,7 +335,38 @@ main{
 }
 
 /* modal styling */
+.modal-content{
+    color:var(--background);
+    background-color: var(--secondary-text);
+}
 
+.modal-header{
+    font-size: 1.2rem;
+    border-color: var(--secondary-background);
+}
+
+.modal-footer{
+    display:flex;
+    justify-content: space-evenly;
+    border-color: var(--secondary-background);
+}
+
+.techList{
+    list-style: circle;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.techList > li{
+ width:50%;
+}
+
+
+.btn{
+    background-color: var(--navbar);
+    border-color: var(--background);
+    color:var(--secondary-text)
+}
 
 
 #closeModal{
